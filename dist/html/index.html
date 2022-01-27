@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Adam Asma Oyunu</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/dist/css/app.min.css">
+</head>
+
+<body>
+    <h1>Adam Asma Oyunu</h1>
+    <p>Gizlilənmiş hərfi tapmaq üçün bir hərif yaz.</p>
+
+    <div class="container">
+        <svg width="250" height="250" class="grafik">
+            <!-- table -->
+            <line x1="50" y1="20" x2="130" y2="20" />
+            <line x1="130" y1="20" x2="130" y2="50" />
+            <line x1="50" y1="20" x2="50" y2="250" />
+            <line x1="10" y1="250" x2="90" y2="250" />
+
+            <!-- head -->
+            <circle cx="130" cy="70" r="20" class="item"/>
+
+            <!-- body -->
+            <line x1="130" y1="90" x2="130" y2="170" class="item"/>
+            <line x1="130" y1="90" x2="100" y2="130" class="item"/>
+            <line x1="130" y1="90" x2="160" y2="130" class="item"/>
+            <line x1="130" y1="170" x2="100" y2="210" class="item"/>
+            <line x1="130" y1="170" x2="160" y2="210" class="item"/>
+        </svg>
+
+        <div id="wrong-letters">
+        </div>
+        <div id="word">
+        </div>
+    </div>
+    <div id="popup-container">
+        <div class="popup text-center">
+            <h2 id="success-message"></h2>
+            <button class="btn" id="play-again">Yenidən oyna</button>
+        </div>
+    </div>
+    <div id="message">
+        <h3>Bu hərfi artıq yazmısınız!</h3>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="/src/js/script.js"></script>
+</body>
+
+</html>
